@@ -22,7 +22,7 @@
   font-weight: 400;
 }
 
-.phone__header .name__wraper h3 {
+.phone__header .name__wraper h3, .content h1 {
   font-weight: 500;
 }
 

@@ -251,6 +251,8 @@
     h1 {
         font-size: var(--H1); //40
         line-height: em(47, 40);
+        @extend %weight-500;
+
         color: $clr-txt-H1;
         margin-bottom: em(24, 40);
     }
