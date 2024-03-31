@@ -1,6 +1,6 @@
-# Frontend Mentor - Meet landing page
+# Frontend Mentor - Chat app
 
-This is a solution to the [Four-card-feature](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD/steps/65fb1e422f40450f91fe67e3/challenge/start). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Four-card-feature](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,10 +15,9 @@ This is a solution to the [Four-card-feature](https://www.frontendmentor.io/lear
 ## Overview
 
 Deep dive into B.E.M.
-Mobile first aproach
-trying to save some bandwidth and made smaller picture for mobile resolution, and used "Art direction" and "Resolution switching" technique for retina displays.
-also i compress jpeg to webp.
-i saved lots of kilobytes. And it has some role in SEO evaluation.
+Mobile first aproach.
+
+Break point solving.
 
 ### Screenshot
 
@@ -57,49 +56,12 @@ i saved lots of kilobytes. And it has some role in SEO evaluation.
 <p>"Flex box"</p>
 <p>"position absolute"</p>
 <p>"pseudoelements"</p>
-<p>"resolutin switching"</p>
 
-```html
-<picture class="card__picture">
-    <source
-        media="(min-width: 1330px)"
-        type="image/webp"
-        srcset="./assets/img/image-footer.webp"
-    />
-    <source
-        media="(min-width: 650px)"
-        type="image/webp"
-        srcset="./assets/img/image-footer-768.webp"
-    />
-    <img
-        src="./assets/img/image-footer-384.webp"
-        decoding="sync"
-        loading="lazy"
-        alt="background picture happy working woman onhome office"
-    />
-</picture>
-```
+
 
 Here i am self-hosting fonts compressed it to woff2,
 fallback to ttf.
 
-```css
-// Red hat display - 500
-@font-face {
-    font-family: 'Red hat display';
-    src: url(../assets/webfonts/Font-face/RedHatDisplay-Medium.woff2) format('woff2'),
-        url(../assets/webfonts/Font-face/RedHatDisplay-Medium.ttf) format('truetype');
-    font-weight: 500;
-}
-
-// Red hat display - 900
-@font-face {
-    font-family: 'Red hat display';
-    src: url(../assets/webfonts/Font-face/RedHatDisplay-Black.woff2) format('woff2'),
-        url(../assets/webfonts/Font-face/RedHatDisplay-Black.ttf) format('truetype');
-    font-weight: 900;
-}
-```
 
 ### Continued development
 
