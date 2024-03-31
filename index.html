@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Meet-landing-page</title>
+        <title>Chat - app</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- zadej popis stranky -->
         <meta name="description" content="" />
@@ -13,9 +13,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- aktivace fontawesome -->
-        <!-- <link rel="stylesheet" href="./assets/css/fontawesome.min.css"> -->
-        <!-- <link rel="stylesheet" href="./assets/css/brands.min.css"> -->
-        <!-- <link rel="stylesheet" href="./assets/css/solid.min.css"> -->
+        <link
+            rel="stylesheet"
+            href="./assets/fontAwesome_css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="./assets/fontAwesome_css/brands.min.css" />
+        <link rel="stylesheet" href="./assets/fontAwesome_css/solid.min.css" />
 
         <link rel="stylesheet" href="css/home.css" />
         <!-- <link
@@ -34,172 +37,126 @@
 
     <body class="home">
         <main class="container">
-            <div class="logo">
-                <img
-                    class="logo__img"
-                    src="./assets/img/logo.svg"
-                    alt="logo company meet"
-                    width="120"
-                    height="30"
-                />
-            </div>
+            <div class="phone__container">
+                <article class="phone">
+                    <div class="phone__wrapper">
+                        <ul class="phone__header">
+                            <li>
+                                <i class="fa-solid fa-angle-left"></i>
+                            </li>
 
-            <picture class="hero">
-                <source
-                    media="(max-width: 699px)"
-                    type="image/webp"
-                    srcset="
-                        ./assets/img/mobile/image-hero-410.webp 1x,
-                        ./assets/img/mobile/image-hero-820.webp 2x
-                    "
-                    media=""
-                />
-                <img
-                    class="hero__img"
-                    src="./assets/img/tablet/image-hero-820.webp"
-                    decoding="async"
-                    loading="eager"
-                    title="happy people"
-                    alt="happy people"
-                />
-            </picture>
+                            <li class="avatar">
+                                <img
+                                    src="./assets/img/avatar.webp"
+                                    alt="avatar"
+                                    width="24"
+                                    height="24"
+                                />
+                            </li>
 
-            <section class="content">
-                <div class="content__top">
-                    <h1>Group Chat for Everyone</h1>
-                    <p>
-                        Meet makes it easy to connect with others face-to-face
-                        virtually and collaborate across any device.
-                    </p>
-                </div>
+                            <li class="name__wraper">
+                                <h3>Samuel Green</h3>
+                                <p>Available to Walk</p>
+                            </li>
 
-                <a href="#" class="btn btn--download"
-                    >Download <span>v1.3</span></a
-                >
-                <a href="#" class="btn btn--info"> What is it?</a>
+                            <li class="dots">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </li>
+                        </ul>
 
-                <div class="shape__wrapper">
-                    <aside class="shape">
-                        <div class="shape__left"></div>
-                        <div class="shape__right"></div>
-                        <div class="shape__mid"></div>
-                    </aside>
-                    <aside class="ring">
-                        <div class="ring__number"><span>01</span></div>
-                    </aside>
-                </div>
+                        <article class="chat">
+                            <ul>
+                                <li class="chat__left">
+                                    <p>
+                                        That sounds great. I’d be happy to
+                                        discuss more.
+                                    </p>
+                                </li>
+                                <li class="chat__left mb16">
+                                    <p>
+                                        Could you send over some pictures of
+                                        your dog, please?
+                                    </p>
+                                </li>
 
-                <ul class="gallery">
-                    <li class="gallery__item">
-                        <img
-                            sizes="(min-width:375px) 50vw, 255px"
-                            srcset="
-                                ./assets/img/image-woman-255.webp 255w,
-                                ./assets/img/image-woman-510.webp 510w
-                            "
-                            src="./assets/img/image-woman-255.webp"
-                            loading="lazy"
-                            decoding="sync"
-                            alt="woman with laptop"
-                        />
-                    </li>
-                    <li class="gallery__item">
-                        <img
-                            sizes="(min-width:375px) 50vw, 255px"
-                            srcset="
-                                ./assets/img/image-womens-255.webp 255w,
-                                ./assets/img/image-womens-510.webp 510w
-                            "
-                            src="./assets/img/image-womens-255.webp"
-                            loading="lazy"
-                            decoding="sync"
-                            alt="old ladies watching pictures on phone"
-                        />
-                    </li>
-                    <li class="gallery__item">
-                        <img
-                            sizes="(min-width:375px) 50vw, 255px"
-                            srcset="
-                                ./assets/img/image-men-255.webp 255w,
-                                ./assets/img/image-men-510.webp 510w
-                            "
-                            src="./assets/img/image-men-255.webp"
-                            loading="lazy"
-                            decoding="sync"
-                            alt="student and his teacehr on e-conference"
-                        />
-                    </li>
-                    <li class="gallery__item">
-                        <img
-                            sizes="(min-width:375px) 50vw, 255px"
-                            srcset="
-                                ./assets/img/image-man-255.webp 255w,
-                                ./assets/img/image-man-510.webp 510w
-                            "
-                            src="./assets/img/image-man-255.webp"
-                            loading="lazy"
-                            decoding="sync"
-                            alt="a man watching phone"
-                        />
-                    </li>
-                </ul>
-                <div class="content__down">
-                    <h3>Built for modern use</h3>
-                    <h2>Smarter meetings, all in one place</h2>
-                    <p>
-                        Send messages, share files, show your screen, and record
-                        your meetings — all in one workspace. Control who can
-                        join with invite-&nbsp;only team access, data
-                        encryption, and data export.
-                    </p>
-                </div>
-                <div class="shape__wrapper two">
-                    <aside class="shape">
-                        <div class="shape__left"></div>
-                        <div class="shape__right"></div>
-                        <div class="shape__mid"></div>
-                    </aside>
-                    <aside class="ring">
-                        <div class="ring__number"><span>02</span></div>
-                    </aside>
-                </div>
-            </section>
+                                <li class="dogs">
+                                    <div class="dogs__wraper">
+                                        <img
+                                            src="./assets/img/dog-image-1.webp"
+                                            alt="happy dog"
+                                            width="40"
+                                            height="40"
+                                        /><img
+                                            src="/assets/img/dog-image-2.webp"
+                                            alt="happy dog"
+                                            width="40"
+                                            height="40"
+                                        /><img
+                                            src="./assets/img/dog-image-3.webp"
+                                            alt="happy dog"
+                                            width="40"
+                                            height="40"
+                                        />
+                                    </div>
+                                </li>
 
-            <footer class="footer">
-                <article class="footer__container">
-                    <h2>Experience more together</h2>
-                    <p>
-                        Stay connected with reliable HD meetings and unlimited
-                        one-on-one and group video sessions.
-                    </p>
-                    <div>
-                        <a href="#" class="btn btn--info">
-                            Download <span>v1.3</span></a
-                        >
+                                <li class="chat__right">
+                                    <p>
+                                        Here are a few pictures. She’s a happy
+                                        girl!
+                                    </p>
+                                </li>
+                                <li class="chat__right mb16">
+                                    <p>Can you make it?</p>
+                                </li>
+
+                                <li class="chat__left">
+                                    <p>
+                                        She looks so happy! The time we
+                                        discussed works. How long shall I take
+                                        her out for?
+                                    </p>
+                                </li>
+
+                                <li class="price">
+                                    <div class="circle"></div>
+                                    <p class="price__time">30 minute walk</p>
+                                    <span class="price__amount">$29</span>
+                                </li>
+
+                                <li class="price">
+                                    <div class="circle"></div>
+                                    <p class="price__time">1 hour walk</p>
+                                    <span class="price__amount">$49</span>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <form action="#" method="get">
+                            <input
+                                type="text"
+                                placeholder="Type a message..."
+                            />
+                            <div class="wrapper">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </form>
                     </div>
                 </article>
+            </div>
 
-                <div class="footer__img">
-                    <picture class="card__picture">
-                        <source
-                            media="(min-width: 1330px)"
-                            type="image/webp"
-                            srcset="./assets/img/image-footer.webp"
-                        />
-                        <source
-                            media="(min-width: 650px)"
-                            type="image/webp"
-                            srcset="./assets/img/image-footer-768.webp"
-                        />
-                        <img
-                            src="./assets/img/image-footer-384.webp"
-                            decoding="sync"
-                            loading="lazy"
-                            alt="background picture happy working woman onhome office"
-                        />
-                    </picture>
+            <section class="content">
+                <div class="content__wrapper">
+                    <h1>Simple booking</h1>
+                    <p>
+                        Stay in touch with our dog walkers through the chat
+                        interface. This makes it easy to discuss arrangements
+                        and make bookings. Once the walk has been completed you
+                        can rate your walker and book again all through the
+                        chat.
+                    </p>
                 </div>
-            </footer>
+            </section>
         </main>
     </body>
 </html>

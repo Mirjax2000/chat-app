@@ -9,196 +9,42 @@
     :root {
         --font-size: #{$font-size-90};
     }
-    .container {
-        margin-top: em(20, 14.4);
-    }
-    .logo {
-        max-width: 33.3%;
-        margin-bottom: em(20, 14.4);
-    }
-
     .content {
-        margin-top: em(24, 14.4);
-    }
-
-    .shape__wrapper {
-        margin-block: em(16, 14.4);
-    }
-    .gallery {
-        margin-bottom: em(16, 14.4);
+        padding-inline: em(16, 14.4);
     }
 }
 
-@include mQdefault__min-width(700px) {
-    :root {
-        --H1: #{$H1--Tbt};
-        --H2: #{$H2--Tbt};
-        --H3: #{$H3--Tbt};
-        --par: #{$par--Tbt};
-        --btn: #{$btn--Tbt};
-        --footer__par: #{$Footer__par--Tbt};
+@include mQdefault__min-width(750px) {
+    .home {
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    .container {
-        max-width: em(768, 16);
-    }
-    .content {
-        &__top {
-            max-width: em(457, 16);
-            margin-inline: auto;
-        }
-    }
-    .btn--download {
-        margin-right: em(16, 16);
-        margin-bottom: 0;
-    }
-
-    .shape__wrapper {
-        margin-block: em(80, 16) em(67, 16);
-    }
-
-    .gallery {
-        row-gap: 0;
-        flex-wrap: nowrap;
-        gap: em(11, 16);
-
-        margin-bottom: em(48, 16);
-
-        & > * {
-            max-width: none;
-            flex-basis: 100%;
-        }
-    }
-    .content .content__down {
-        max-width: em(573, 16);
-        margin-inline: auto;
-    }
-
-    .footer {
-        &__container {
-            padding-inline: em(97, 16);
-        }
-        p {
-            margin-block: em(32, 18) em(40, 18);
-        }
-    }
-}
-
-@include mQdefault__min-width(1024px) {
-    :root {
-        --H1: #{$H1--PC};
-        --H2: #{$H2--PC};
-        --H3: #{$H3--PC};
-        --par: #{$par--PC};
-        --btn: #{$btn--PC};
-        --footer__par: #{$Footer__par--PC};
-    }
-
     .container {
         max-width: em(1440, 16);
-    }
-    .hero {
-        display: block;
-        margin: 0 auto;
-        &__img {
-            margin: 0;
-        }
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(1rem, 15.797vw - 6.405rem, 7.813rem);
 
-    .content {
-        &__top {
-            max-width: em(540, 16);
-        }
-        p {
-            margin-block: em(34, 18) em(32, 18);
-        }
-    }
-    .shape__wrapper {
-        margin-block: em(115, 16) em(64, 16);
-    }
-    .gallery {
-        gap: em(30, 16);
-        margin-bottom: em(80, 16);
-        max-width: em(1110, 16);
-        margin-inline: auto;
-    }
-
-    .content .content__down {
-        max-width: em(540, 16);
-        h3 {
-            margin-bottom: em(16, 16);
-        }
-        h2 {
-            max-width: 15ch;
-            margin-inline: auto;
-        }
-    }
-
-    .footer {
-        &__container {
-            max-width: em(1110, 16);
-            margin-inline: auto;
-            padding-inline: 0;
-            display: flex;
-            justify-content: space-between;
-            text-align: left;
-
-            h2 {
-                flex-basis: 33.3%;
-            }
-            p {
-                flex-basis: 33.3%;
-            }
-            div {
-                align-self: center;
-            }
-        }
-        p {
-            margin: 0;
-        }
-    }
-}
-
-@include mQdefault__min-width(1330px) {
-    .container {
-        margin-top: em(80, 16);
-    }
-    .hero {
-        position: relative;
-
-        &::after,
         &::before {
-            content: '';
-            position: absolute;
-            background-repeat: no-repeat;
-            width: em(394, 16);
-            height: em(303, 16);
-            top: 0;
-        }
-        &::before {
-            background-image: url(../assets/img/image-hero-left.webp);
-            left: em(-25, 16);
+            right: 74.3%;
+            top: em(-409, 16);
         }
         &::after {
-            background-image: url(../assets/img/image-hero-right.webp);
-            right: em(-25, 16);
-            top: em(55, 16);
+            left: 74.3%;
+            bottom: em(-409, 16);
         }
-        img {
-            display: none;
-        }
-    }
 
-    .content {
-        margin-top: em(100, 16);
-        h1 {
-            line-height: em(64, 64);
+        .phone__container {
+            flex-basis: em(247, 16);
         }
-        p {
-            line-height: em(26, 18);
+        .content {
+            flex-basis: em(445, 16);
+            margin: 0;
+            text-align: left;
+            padding: 0;
         }
-    }
-    .footer {
-        padding-block: em(116, 16) em(104, 16);
     }
 }

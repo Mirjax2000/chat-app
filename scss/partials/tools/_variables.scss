@@ -7,17 +7,17 @@ $debug: false;
 
 // --- color pallete ---
 $clr10: #ffffff;
-$clr11: #4d96a9;
-$clr12: #855fb1;
-$clr13: #28283d;
-$clr14: #87879d;
-$clr15: #8fe3f9;
-$clr16: #d9b8ff;
-$clr17: #fafafa;
-$clr18: #71c0d4;
-$clr19: #b18bdd;
-$clr20: #87879d3f;
-$clr21: #4d97a9;
+$clr11: #9341c8;
+$clr12: #eee5f4;
+$clr13: #3e2753;
+$clr14: #6e5d7e;
+$clr15: #e472ff;
+$clr16: #3e275340;
+$clr17: #a39da9;
+$clr18: #c5c9cc;
+$clr19: #d99eff;
+$clr20: #f5f3f7;
+$clr21: #fafafa;
 
 $clr99: #808080;
 // -----------------------
@@ -31,21 +31,25 @@ $clr-txt-H2: $clr13;
 $clr-txt-H2--footer: $clr17;
 
 // text H3
-$clr-txt-H3: $clr11;
-// text par
-$clr-txt-par: $clr14;
-$clr-txt-par--footer: $clr17;
+$clr-txt-H3--header: $clr10;
 
-// text btn
-$clr-txt-btn: $clr10;
+// text par
+$clr-txt-par: $clr17;
+$clr-txt-par--header: $clr19;
+
+// text chat li left
+$chat__li--left: $clr11;
+$chat__li--right: $clr14;
 // -------------------------
 
 // backround color
-$clr-bg-body: $clr17;
+$clr-bg-body: $clr21;
 
-$clr-bg-container: $clr15;
+$clr-bg-phone: $clr10;
 
-$clr-bg-active: $clr10;
+$clr-bg-phone__wraper: $clr20;
+
+$clr-bg-chat-li: $clr12;
 
 $clr-bg-footer: $clr21;
 
@@ -75,6 +79,7 @@ $font-family-YoungSerif: 'Young Serif', serif;
 $font-family-Montserrat: Montserrat, serif;
 $font-family-Fraunces: Fraunces, serif;
 $font-family-Poppins: Poppins, sans-serif;
+$font-family-Rubik: Rubik, sans-serif;
 $font-family-RedHatDisplay: 'Red hat display', sans-serif;
 $font-family-Barlow-semiCon: 'Barlow_semi_condensed', sans-serif;
 
@@ -84,8 +89,8 @@ $font-family-systemUI: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
 // -------------------------------
 
 // --- border-radius ---
-$br-picture--mobile: 8;
-$br-card--desktop: 6;
+$br-phone: 30;
+$br-phone__wrapper: 20;
 $br-btn: 29;
 // ----------------------
 
@@ -95,7 +100,8 @@ $clr-br-list: $clr13;
 // ----------------------
 
 // shadow color
-$clr-shdw: $clr17;
+$clr-shdw__phone: $clr16;
+$clr-shdw__header: $clr16;
 // ----------------------
 
 // transition
@@ -123,7 +129,7 @@ $H2--Mob: rem(32, 0);
 $H2--Tbt: rem(40, 0);
 $H2--PC: rem(40, 0);
 
-$H3--Mob: rem(16, 0);
+$H3--Mob: rem(11, 0);
 $H3--Tbt: rem(16, 0);
 $H3--PC: rem(16, 0);
 
@@ -131,13 +137,25 @@ $par--Mob: rem(16, 0);
 $par--Tbt: rem(16, 0);
 $par--PC: rem(18, 0);
 
-$btn--Mob: rem(16, 0);
-$btn--Tbt: rem(16, 0);
-$btn--PC: rem(16, 0);
+$par__header--Mob: rem(8, 0);
+$par__header--Tbt: rem(16, 0);
+$par__header--PC: rem(18, 0);
 
-$Footer__par--Mob: rem(18, 0);
-$Footer__par--Tbt: rem(18, 0);
-$Footer__par--PC: rem(18, 0);
+$chat__li--Mob: rem(8, 0);
+$chat__li--Tbt: rem(8, 0);
+$chat__li--PC: rem(8, 0);
+
+$span--Mob: rem(12, 0);
+$span--Tbt: rem(12, 0);
+$span--PC: rem(12, 0);
+
+$price__walk--Mob: rem(8, 0);
+$price__walk--Tbt: rem(8, 0);
+$price__walk--PC: rem(8, 0);
+
+$Placeholder--Mob: rem(9, 0);
+$Placeholder--Tbt: rem(9, 0);
+$Placeholder--PC: rem(9, 0);
 
 // --------------------------------
 $pages: home, gallery, blog, contact, buttons;

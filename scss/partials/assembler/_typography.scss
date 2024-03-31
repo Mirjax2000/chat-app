@@ -165,21 +165,43 @@
 // }
 
 // Red hat display - 500
+// @font-face {
+//     font-family: 'Red hat display';
+//     src: url(../assets/webfonts/Font-face/RedHatDisplay-Medium.woff2)
+//             format('woff2'),
+//         url(../assets/webfonts/Font-face/RedHatDisplay-Medium.ttf)
+//             format('truetype');
+//     font-weight: 500;
+// }
+
+// // Red hat display - 900
+// @font-face {
+//     font-family: 'Red hat display';
+//     src: url(../assets/webfonts/Font-face/RedHatDisplay-Black.woff2)
+//             format('woff2'),
+//         url(../assets/webfonts/Font-face/RedHatDisplay-Black.ttf)
+//             format('truetype');
+//     font-weight: 900;
+// }
+
+// Rubik - 500
 @font-face {
-    font-family: 'Red hat display';
-    src: url(../assets/webfonts/Font-face/RedHatDisplay-Medium.woff2)
-            format('woff2'),
-        url(../assets/webfonts/Font-face/RedHatDisplay-Medium.ttf)
-            format('truetype');
+    font-family: 'Rubik';
+    src: url(../assets/webfonts/Font-face/Rubik-Medium.woff2) format('woff2'),
+        url(../assets/webfonts/Font-face/Rubik-Medium.ttf) format('truetype');
     font-weight: 500;
 }
-
-// Red hat display - 900
+// Rubik - 400
 @font-face {
-    font-family: 'Red hat display';
-    src: url(../assets/webfonts/Font-face/RedHatDisplay-Black.woff2)
-            format('woff2'),
-        url(../assets/webfonts/Font-face/RedHatDisplay-Black.ttf)
-            format('truetype');
-    font-weight: 900;
+    font-family: 'Rubik';
+    src: url(../assets/webfonts/Font-face/Rubik-Regular.woff2) format('woff2'),
+        url(../assets/webfonts/Font-face/Rubik-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+// Rubik - 700
+@font-face {
+    font-family: 'Rubik';
+    src: url(../assets/webfonts/Font-face/Rubik-Bold.woff2) format('woff2'),
+        url(../assets/webfonts/Font-face/Rubik-Bold.ttf) format('truetype');
+    font-weight: 700;
 }
